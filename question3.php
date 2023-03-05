@@ -1,3 +1,7 @@
+<!-- 
+    A GET API that takes a string and returns if it's palindrome or not.
+ -->
+
 <?php
 
 $string = $_GET['string'];

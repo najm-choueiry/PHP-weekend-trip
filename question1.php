@@ -1,3 +1,7 @@
+<!-- 
+    A POST API that takes an email and password. Passwords should contain 8 characters minimum, one special character minimum, at least one upper case letter,  etc. An email should have also the email format: @, no dashes, a "dot" somewhere after the @. Return true or false in a JSON object
+ -->
+
 <?php
 
 

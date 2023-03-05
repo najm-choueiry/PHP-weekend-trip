@@ -1,3 +1,7 @@
+<!-- 
+    A GET API that takes a string containing numbers separated by commas (2,3,5,1,0,6) and sort them using Selection Sort. Return the new sorted list using JSON.
+ -->
+
 <?php
 
 function selection_sort(&$arr)
