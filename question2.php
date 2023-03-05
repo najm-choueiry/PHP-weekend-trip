@@ -1,20 +1,29 @@
 <?php
 
-function selection_sort($nums) {
-    $len = count($nums);
-    for ($i = 0; $i < $len; $i++) {
-        $min_idx = $i;
-        for ($j = $i + 1; $j < $len; $j++) {
-            if ($nums[$j] < $nums[$min_idx]) {
-                $min_idx = $j;
+function selection_sort(&$arr) 
+{
+    for($i = 0; $i < $len ; $i++)
+    {
+        $min_index = $i;
+        for($j = $i + 1; $j < $len ; $j++)
+        {
+            if ($arr[$j] < $arr[$min_index])
+            {
+                $min_index = $j;
             }
         }
-        $temp = $nums[$i];
-        $nums[$i] = $nums[$min_idx];
-        $nums[$min_idx] = $temp;
+          
+        // swap the minimum value to $ith node
+        if ($arr[$i] > $arr[$min_index])
+        {
+            $tmp = $arr[$i];
+            $arr[$i] = $arr[$min_index];
+            $arr[$min_index] = $tmp;
+        }
     }
-    return $nums;
 }
+
+
 
 $response = [];
 
