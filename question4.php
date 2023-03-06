@@ -26,7 +26,7 @@ function even_age($number)
 $prime = prime_age($age);
 $even = even_age($age);
 
-if ($prime == 1 & $even == 0) {
+if ($prime == 1 && $even == 0) {
     echo json_encode($response["Age"] = "prime and even");
 } else {
     echo json_encode($response["Age"] = "not prime or not even");
